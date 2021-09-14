@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <title> Index - JavaScript - P.O.O. </title>
+        
+</head>
+<body>
+        <script type="module">
+                import {Cliente} from "C:\Users\Edna\Documents\Tivit\JavaScript - POO\JS - POO/Cliente.js";
+                import {ContaCorrente} from "C:\Users\Edna\Documents\Tivit\JavaScript - POO\JS - POO/ContaCorrente.js";
+                const cliente1 = new Cliente();
+                cliente1.nome = "Edna";
+                cliente1.cpf = "123456789";
+                cliente1.conta = "12345-6";
+
+                const conta1 = new Conta();
+                conta1.agencia = "1623";
+                conta1.conta = "05788-9";
+                conta1.saldo = 300;
+
+
+                document.write(cliente1.nome + " -  "
+                                          + "CPF: " +cliente1.cpf + " -  " 
+                                                + " Conta Corrente: " + cliente1.conta);
+
+
+                const contaEdna = new Conta();
+                contaEdna.saldo = 1000;
+                contaEdna.sacar(200);
+
+                document.write("<BR>Saldo da conta da Edna - R$ " + contaEdna.saldo + ",00");
+
+        </script>
+
+</body>
+</html>
+
